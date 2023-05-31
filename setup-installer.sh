@@ -38,7 +38,7 @@ go install github.com/projectdiscovery/mapcidr/cmd/mapcidr@latest &> /dev/null |
 go install github.com/ffuf/ffuf/v2@latest &> /dev/null || echo "Failed to install ffuf."
 go install github.com/tomnomnom/unfurl@latest &> /dev/null || echo "Failed to install unfurl."
 go install github.com/projectdiscovery/httpx/cmd/httpx@latest &> /dev/null || echo "Failed to install httpx."
-go install github.com/bp0lr/gauplus@latest &> /dev/null || echo "Failed to install gauplus."
+go install github.com/lc/gau/v2/cmd/gau@latest &> /dev/null || echo "Failed to install gau."
 go install github.com/projectdiscovery/katana/cmd/katana@latest &> /dev/null || echo "Failed to install katana."
 go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest &> /dev/null || echo "Failed to install subfinder."
 go install github.com/projectdiscovery/dnsx/cmd/dnsx@latest &> /dev/null || echo "Failed to install dnsx."
