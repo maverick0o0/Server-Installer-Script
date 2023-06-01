@@ -46,6 +46,7 @@ go install github.com/projectdiscovery/shuffledns/cmd/shuffledns@latest &> /dev/
 go install github.com/tomnomnom/anew@latest &> /dev/null || echo "Failed to install anew."
 go install github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest &> /dev/null || echo "Failed to install nuclei."
 go install github.com/tomnomnom/waybackurls@latest&> /dev/null || echo "Failed to install waybackurls."
+go install -v github.com/projectdiscovery/chaos-client/cmd/chaos@latest || echo "Failed to install waybackurls."
 wget https://go.dev/dl/go1.20.4.linux-amd64.tar.gz;rm -rf /usr/local/go && tar -C /usr/local -xzf go1.20.4.linux-amd64.tar.gz;export PATH=$PATH:/usr/local/go/bin;source $HOME/.profile;go version;
 
 
