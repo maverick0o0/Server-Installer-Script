@@ -49,6 +49,7 @@ go install github.com/tomnomnom/waybackurls@latest&> /dev/null || echo "Failed t
 go install -v github.com/projectdiscovery/chaos-client/cmd/chaos@latest || echo "Failed to install waybackurls."
 go install github.com/jaeles-project/gospider@latest || echo "Failed to install gospider."
 go install github.com/ImAyrix/cut-cdn@latest || echo "Failed to install cut-cdn."
+go install github.com/d3mondev/puredns/v2@latest || echo "Failed to install pureDns"
 wget https://go.dev/dl/go1.20.4.linux-amd64.tar.gz;rm -rf /usr/local/go && tar -C /usr/local -xzf go1.20.4.linux-amd64.tar.gz;export PATH=$PATH:/usr/local/go/bin;source $HOME/.profile;go version;
 
 
