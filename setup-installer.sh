@@ -6,8 +6,8 @@ error_exit() {
 
 echo "Installing packages..."
 # Install packages
-sudo apt update || error_exit "Failed to update package repositories."
-sudo apt install -y tmux crunch apache2 php php-curl certbot python3-certbot-apache git net-tools libpcap-dev build-essential libssl-dev curl jq zip || error_exit "Failed to instal>
+sudo apt update && apt upgrade || error_exit "Failed to update package repositories."
+sudo apt install -y tmux crunch apache2 php php-curl certbot python3-certbot-apache git net-tools libpcap-dev build-essential libssl-dev curl jq zip || error_exit "Failed to install deps"
 
 echo "Installing Python..."
 # Install Python
