@@ -1,7 +1,6 @@
 # Function to display error message and exit
 error_exit() {
   echo "Error: $1" >&2
-  exit 1
 }
 
 echo "Installing packages..."
@@ -15,7 +14,6 @@ apt install -y software-properties-common || error_exit "Failed to install Pytho
 add-apt-repository -y ppa:deadsnakes/ppa || error_exit "Failed to install deadsnakes ppa."
 apt-get update && apt-cache search python3.1 || error_exit "Failed to install Python."
 apt-get install python3.11 -y || error_exit "Failed to install Python."
-ln -s /usr/bin/python3.11 /usr/bin/python || error_exit "Failed to create symbolic link for Python."
 python --version || error_exit "Python installation failed."
 
 echo "Installing Docker..."
@@ -27,7 +25,7 @@ echo "Installing Go..."
 wget https://go.dev/dl/go1.20.4.linux-amd64.tar.gz || error_exit "Failed to download Go archive."
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.4.linux-amd64.tar.gz || error_exit "Failed to extract Go archive."
 export PATH=$PATH:/usr/local/go/bin || error_exit "Failed to set Go environment variables."
-source $HOME/.profile || error_exit "Failed to source profile."
+source ~/.profile || error_exit "Failed to source profile."
 go version || error_exit "Go installation failed."
 
 
