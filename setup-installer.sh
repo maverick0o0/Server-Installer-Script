@@ -52,7 +52,8 @@ go install github.com/projectdiscovery/alterx/cmd/alterx@latest || echo "Failed 
 go install github.com/hakluke/hakrawler@latest || echo "Failed to install hakrawler"
 go install github.com/hahwul/dalfox/v2@latest || echo "Failed to install dalfox"
 go install github.com/tomnomnom/gf@latest || ecoh "Failed to install gf"
- go install github.com/dwisiswant0/gfx@latest || echo "Faile to install gfx enhanced version of gf"
+go install github.com/dwisiswant0/gfx@latest || echo "Faile to install gfx enhanced version of gf"
+go install github.com/BishopFox/jsluice/cmd/jsluice@latest || echo "Failed to install jsluice"
 wget https://go.dev/dl/go1.20.4.linux-amd64.tar.gz;rm -rf /usr/local/go && tar -C /usr/local -xzf go1.20.4.linux-amd64.tar.gz;export PATH=$PATH:/usr/local/go/bin;source $HOME/.profile;go version;
 
 
